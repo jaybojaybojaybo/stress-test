@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Stress Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stress Test</h1>
+      <br>
+
+
+      <form id="survey">
+        <p>Fill out the boxes below to determine your stress level and get advice how to reduce it!</p>
+        <div class="form-group">
+          <p> These might be some warning signs you have encountered: please select those that apply.</p>
+          <input type="checkbox" name="warnings" value="1">Headache<br>
+          <input type="checkbox" name="warnings" value="1">Loss of sleep</br>
+          <input type="checkbox" name="warnings" value="1">Anxiety</br>
+          <input type="checkbox" name="warnings" value="1">Feeling overwhelmed</br>
+          <input type="checkbox" name="warnings" value="1">Forgetting your own name</br>
+          <input type="checkbox" name="warnings" value="1">Loss of hearing</br>
+        </div>
+        <div class="form-group">
+          <p> These are health symptoms that are indicate stress. Please select those that apply. </p>
+          <input type="checkbox" name="symptoms" value="1">Blacking Out<br>
+          <input type="checkbox" name="symptoms" value="1">"Performance issues"</br>
+          <input type="checkbox" name="symptoms" value="1">Bleeding ears</br>
+          <input type="checkbox" name="symptoms" value="1">Rashes</br>
+          <input type="checkbox" name="symptoms" value="1">Brittle Bones</br>
+          <input type="checkbox" name="symptoms" value="1">"The Shakes"</br>
+        </div>
+        <div class="form-group">
+          <p> These are some coping methods to help stress. Select those that you do. </p>
+          <input type="checkbox" name="coping" value="-1">Petting a cat<br>
+          <input type="checkbox" name="coping" value="-1">Meditation</br>
+          <input type="checkbox" name="coping" value="-1">Hanging out with the elderly</br>
+          <input type="checkbox" name="coping" value="-1">Just saying "screw it"</br>
+          <input type="checkbox" name="coping" value="-1">Exercise</br>
+          <input type="checkbox" name="coping" value="-1">Sleep</br>
+        </div>
+
+        <button type="submit" class="btn btn-info">Click here for results!</button>
+      </form>
+      <div id="results">
+        <p id="severe">You have extreme stress. See a dang doctor, or 911</p>
+        <p id="moderate">You're kind of stressed, but you will be OK.</p>
+        <p id="noStress">You are fine. Good job! </p>
+      </div>
+    </div>
+  </body>
+</html>
